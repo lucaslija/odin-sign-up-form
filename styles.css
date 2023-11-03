@@ -42,6 +42,11 @@ header {
   background-color: rgba(0,0,0,.5);
 }
 
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+}
+
 #icon {
   width: 100px;
   height: 100px;
@@ -51,8 +56,106 @@ header {
 
 header p {
   font-size: .75rem;
+  margin: 10px;
 }
 
 main {
   width: 70vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#action {
+  margin: 25px;
+  padding-right: 75px;
+}
+
+#action h3 {
+  margin-top: 25px;
+}
+
+#signup {
+  box-shadow: 1px 1px 5px rgb(185, 184, 184);
+  padding: 25px;
+}
+
+form {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  margin: 10px;
+  margin-left: 0;
+  padding-right: 50px;
+  color: grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .6rem;
+}
+
+input {
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 3px;
+  font-style: italic;
+  font-size: .75rem;
+  padding: 2px;
+  margin-top: 3px;
+  width: 200px;
+  height: 25px;
+}
+
+input::placeholder {
+  color:rgb(185, 184, 184);
+  font-style: italic;
+  font-size: .75rem;
+}
+
+input:focus {
+  border-color: rgb(113, 153, 233);
+  box-shadow: 1px 3px 3px rgba(113, 153, 233, .5);
+}
+
+input:required:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+button {
+  background-color: rgb(113, 153, 233);
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  color: white;
+  border: none;
+  margin: 25px;
+  margin-top: 10px;
+  box-shadow: .5px 1px 5px rgb(185, 184, 184);
+  font-weight: bold;
+}
+
+button:active {
+  background-color: rgb(131, 171, 251);
+  box-shadow: .5px 1px 5px rgb(136, 135, 135);
+}
+
+#login {
+  margin: 25px;
+  margin-top: 0;
+}
+
+#login a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(113, 153, 233);
 }
