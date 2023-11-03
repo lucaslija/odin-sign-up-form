@@ -13,7 +13,7 @@ function passwordValidate() {
     pw.style.borderColor = "green";
     pwConfirm.style.borderColor = "green";
 
-    pwError.innerText = "";
+    pwError.innerHTML = "<br>";
   }
 }
 

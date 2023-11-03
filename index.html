@@ -23,31 +23,35 @@
     <div id="signup">
       <h3>Let's do this!</h3>
       <form action="" method="post">
-        <label for="user-firstname">
-          *First Name
-          <input type="text" id="user-firstname" name="firstname" placeholder="lucas" maxlength="20" required>
-        </label>
-        <label for="user-lastname">
-          Last Name
-          <input type="text" id="user-lastname" name="lastname" placeholder="lija" maxlength="20">
-        </label>
-        <label for="user-email">
-          *Email
-          <input type="email" id="user-email" name="email" placeholder="lucas@lija.com" autocomplete="email">
-        </label>
-        <label for="user-phone">
-          Phone Number
-          <input type="text" id="user-phone" name="phone" placeholder="(XXX)-XXX-XXXX" pattern="\(\d{3}\)-\d{3}-\d{4}" autocomplete="tel">
-        </label>
-        <label id="user-label" for="user-password">
-          *Password
-          <input type="password" id="user-password" name="password" required>
-          <div id="pw-error"></div>
-        </label>
-        <label id="confirm-label" for="user-confirm">
-          *Confirm Password
-          <input type="password" id="user-confirm" name="confirm" required>
-        </label>
+        <div id="col1">
+          <label for="user-firstname">
+            *First Name
+            <input type="text" id="user-firstname" name="firstname" placeholder="lucas" maxlength="20" required>
+          </label>
+          <label for="user-email">
+            *Email
+            <input type="email" id="user-email" name="email" placeholder="lucas@lija.com" autocomplete="email">
+          </label>
+          <label id="user-label" for="user-password">
+            *Password
+            <input type="password" id="user-password" name="password" required>
+            <div id="pw-error"><br></div>
+          </label>
+        </div>
+        <div id="col2">
+          <label for="user-lastname">
+            Last Name
+            <input type="text" id="user-lastname" name="lastname" placeholder="lija" maxlength="20">
+          </label>
+          <label for="user-phone">
+            Phone Number
+            <input type="text" id="user-phone" name="phone" placeholder="(XXX)-XXX-XXXX" pattern="\(\d{3}\)-\d{3}-\d{4}" autocomplete="tel">
+          </label>
+          <label id="confirm-label" for="user-confirm">
+            *Confirm Password
+            <input type="password" id="user-confirm" name="confirm" required>
+          </label>
+        </div>
       </form>
     </div>
     <label for="submit">
