@@ -10,6 +10,7 @@ body {
  color: black;
  -webkit-font-smoothing: antialiased;
  display: flex;
+ height: 100vh;
 }
 
 body, input, button {
@@ -22,5 +23,23 @@ button {
 }
 
 header {
-  background-image: none;
+  background-image: url(./images/bg-image.jpg);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+header p {
+  font-size: .75rem;
 }
