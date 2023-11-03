@@ -9,6 +9,7 @@ body {
  background: white;
  color: black;
  -webkit-font-smoothing: antialiased;
+ display: flex;
 }
 
 body, input, button {
