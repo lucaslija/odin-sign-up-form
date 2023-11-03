@@ -19,3 +19,7 @@ body, input, button {
 button {
  cursor: pointer;
 }
+
+header {
+  background-image: none;
+}
