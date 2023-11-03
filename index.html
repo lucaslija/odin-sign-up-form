@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Sign-Up Form</title>
   <link href="./styles.css" rel="stylesheet" />
+  <script src="./script.js" async defer></script>
 </head>
 <body>
   <header>
@@ -22,34 +23,35 @@
     <div id="signup">
       <h3>Let's do this!</h3>
       <form action="" method="post">
-        <label for="firstname">
+        <label for="user-firstname">
           *First Name
-          <input type="text" id="user_firstname" name="firstname" placeholder="lucas" maxlength="20" required>
+          <input type="text" id="user-firstname" name="firstname" placeholder="lucas" maxlength="20" required>
         </label>
-        <label for="lastname">
+        <label for="user-lastname">
           Last Name
-          <input type="text" id="user_lastname" name="lastname" placeholder="lija" maxlength="20">
+          <input type="text" id="user-lastname" name="lastname" placeholder="lija" maxlength="20">
         </label>
-        <label for="email">
+        <label for="user-email">
           *Email
-          <input type="email" id="user_email" name="email" placeholder="lucas@lija.com" required>
+          <input type="email" id="user-email" name="email" placeholder="lucas@lija.com" autocomplete="email">
         </label>
-        <label for="phone">
+        <label for="user-phone">
           Phone Number
-          <input type="text" id="user_phone" name="phone" placeholder="(XXX)-XXX-XXXX" pattern="\(\d{3}\)-\d{3}-\d{4}">
+          <input type="text" id="user-phone" name="phone" placeholder="(XXX)-XXX-XXXX" pattern="\(\d{3}\)-\d{3}-\d{4}" autocomplete="tel">
         </label>
-        <label for="password">
+        <label id="user-label" for="user-password">
           *Password
-          <input type="password" id="user_password" name="password" required>
+          <input type="password" id="user-password" name="password" required>
+          <div id="pw-error"></div>
         </label>
-        <label for="confirm">
+        <label id="confirm-label" for="user-confirm">
           *Confirm Password
-          <input type="password" id="user_confirm" name="confirm" required>
+          <input type="password" id="user-confirm" name="confirm" required>
         </label>
       </form>
     </div>
     <label for="submit">
-      <button type="submit">Create Account</button>
+      <button type="submit" id="submit">Create Account</button>
     </label>
     <div id="login">
       <p>Already have an account? <a href="">Log in</a></p>
